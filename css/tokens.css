@@ -1,0 +1,28 @@
+/*
+ * tokens.css
+ * Zmienne kolorów i fontów + motyw ciemny (system i ręczny przełącznik [data-theme]).
+ */
+
+/* Layout: mapa terenu jako „stół” po lewej, podkładka inspektora (tura, notatnik, dowody) po prawej */
+:root{
+  --paper:#E4EBE7; --sheet:#F8FAF8; --sheet-2:#EEF3F0; --ink:#13232A; --muted:#566A6F; --line:#C2CFCA;
+  --land:#DDE6DF; --field:#D2DEC8; --lake:#B5D5E2; --lake-edge:#7FB3C9; --water:#2B7C9F; --pipe:#5F6A70; --rogue:#9A4B3B;
+  --accent:#A86E00; --accent-soft:#F6E2B0; --on-accent:#1B1300;
+  --ok:#2C7A4C; --bad:#B13A3A; --warn:#9A6200;
+  --glass:#F4F8FA; --shadow:0 1px 2px rgba(19,35,42,.08),0 6px 20px rgba(19,35,42,.08);
+  --display:'Bricolage Grotesque','Segoe UI',system-ui,sans-serif;
+  --body:'IBM Plex Sans','Segoe UI',system-ui,sans-serif;
+  --mono:'IBM Plex Mono',ui-monospace,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#0D171B; --sheet:#152229; --sheet-2:#1A2A31; --ink:#E1EBE9; --muted:#93A7A9; --line:#2B3E44;
+  --land:#122025; --field:#16271F; --lake:#173C4D; --lake-edge:#2F6C86; --water:#5BB2D5; --pipe:#A3AEB2; --rogue:#E08A75;
+  --accent:#F0B43A; --accent-soft:#3A2E12; --on-accent:#1B1300;
+  --ok:#5DC28C; --bad:#F07C7C; --warn:#E9B34C;
+  --glass:#DDE7EB; --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 24px rgba(0,0,0,.3); color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#0D171B; --sheet:#152229; --sheet-2:#1A2A31; --ink:#E1EBE9; --muted:#93A7A9; --line:#2B3E44;
+  --land:#122025; --field:#16271F; --lake:#173C4D; --lake-edge:#2F6C86; --water:#5BB2D5; --pipe:#A3AEB2; --rogue:#E08A75;
+  --accent:#F0B43A; --accent-soft:#3A2E12; --on-accent:#1B1300;
+  --ok:#5DC28C; --bad:#F07C7C; --warn:#E9B34C;
+  --glass:#DDE7EB; --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 24px rgba(0,0,0,.3); color-scheme:dark}

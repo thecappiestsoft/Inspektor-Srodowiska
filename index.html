@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Inspektor Środowiska</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/overlays.css">
+</head>
+<body>
+<div id="root"></div>
+<footer class="foot">© 2026 CappySoft.pl</footer>
+<div id="ov"></div>
+
+<!-- Skrypty klasyczne (nie moduły ES), ładowane w tej kolejności – dzielą globalny zakres.
+     Dzięki temu gra działa także po otwarciu pliku bez serwera (file://). -->
+<script src="js/core/i18n.js"></script>
+<script src="js/data/world.js"></script>
+<script src="js/data/chemistry.js"></script>
+<script src="js/data/texts.js"></script>
+<script src="js/data/cards.js"></script>
+<script src="js/core/utils.js"></script>
+<script src="js/core/state.js"></script>
+<script src="js/game/generator.js"></script>
+<script src="js/game/simulation.js"></script>
+<script src="js/game/turn.js"></script>
+<script src="js/game/actions.js"></script>
+<script src="js/game/resolution.js"></script>
+<script src="js/render/map.js"></script>
+<script src="js/render/ui.js"></script>
+<script src="js/render/overlays.js"></script>
+<script src="js/events/handlers.js"></script>
+<script src="js/core/persistence.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
